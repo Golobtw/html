@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulari</title>
+  </head>
+  <body>
+    <h1 align="right">Formulari</h1>
+    <img
+      align="right"
+      width="40"
+      src="C:\Users\elser\OneDrive\Escritorio\HTMl\FOrmulario\recirculachallenge-icona-formulari.png"
+      alt="Fotico"
+    />
+    <form action="elsergigaga@gmail.com" method="post">
+      <fieldset>
+        <legend>Informació personal</legend>
+        Nom:
+        <br />
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          placeholder="Nom"
+          required
+        /><br /><br />
+        Cognom:
+        <br /><input
+          type="text"
+          id="cognoms"
+          name="cognoms"
+          placeholder="Cognoms"
+          required
+        /><br /><br />
+        Foto teva:
+        <br />
+        <input
+          type="file"
+          id="foto"
+          name="foto"
+          placeholder="Foto de carnet"
+        /><br /><br />
+        <select name="gender" id="gender">
+          <option value="male">Home</option>
+          <option value="dona">Dona</option>
+          <option value="O">Altre</option>
+        </select>
+        Data de naixement:
+        <br />
+        <input
+          type="date"
+          id="data_naixement"
+          name="data_naixement"
+          required
+          placeholder="Data de naixement"
+        /><br /><br />
+        Lloc de naixement
+        <br /><input
+          type="text"
+          id="lloc_naixement"
+          name="lloc_naixement"
+          placeholder="Lloc de naixement"
+          required
+        /><br /><br />
+        Nacionalitat:
+        <br /><input
+          type="text"
+          id="nacionalitat"
+          name="nacionalitat"
+          placeholder="Nacionalitat"
+          required
+        /><br /><br />
+        DNI:
+        <br /><input type="password" name="clau" maxlength="9" /> <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Idiomes</legend>
+        Altres idiomes...
+        <br />
+        <input type="checkbox" name="angles" />Castella
+        <br />
+        <input type="checkbox" name="frances" />Angles
+        <br />
+        <input type="checkbox" name="alemany" />Catalan
+      </fieldset>
+
+      <fieldset>
+        <legend><h2>On has treballat</h2></legend>
+        <textarea name="coments" cols="30" rows="2"> </textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend><h2>Estudis</h2></legend>
+        <input type="radio" name="Estudis" value="ESO" /> :ESO <br />
+        <br />
+        <input type="radio" name="estudis" value="Bachillerat" /> :Bachillerat
+        <br />
+        <br />
+        <input type="radio" name="estudis" value="Cicle Mitja" /> :Cicle Mitja
+        <br />
+        <br />
+        <input type="radio" name="estudis" value="Cicle Superior" /> :Cicle
+        Superior <br />
+      </fieldset>
+
+      <input
+        type="button"
+        name="”tancar”"
+        value="Tancar finestra"
+        onclick="window.close();"
+      />
+      <input type="submit" name="enviar" value="Enviar dades" />
+      <input type="reset" name="borrar" value="Borrar tots els camps" />
+    </form>
+  </body>
+</html>
