@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulari de Selecció</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Allison"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form
+      class="formulari-container"
+      action="https://alumnat.cat/form"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <h1>Nou Treballador</h1>
+
+      <div class="form-control">
+        <label for="nom">Nom</label>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          placeholder="Escriu el teu nom"
+          required
+        />
+      </div>
+
+      <div class="form-control">
+        <label for="cognoms">Cognoms</label>
+        <input
+          type="text"
+          id="cognoms"
+          name="cognoms"
+          placeholder="Escriu els teus cognoms"
+          required
+        />
+      </div>
+
+      <div class="form-control">
+        <label for="edat">Edat</label>
+        <input
+          type="number"
+          id="edat"
+          name="edat"
+          placeholder="Escriu la teva edat"
+          required
+          min="18"
+          max="100"
+        />
+      </div>
+
+      <div class="form-control">
+        <label for="dni">DNI</label>
+        <input
+          type="text"
+          id="dni"
+          name="dni"
+          placeholder="Escriu el teu DNI"
+          required
+          maxlength="9"
+          pattern="[0-9]{8}[A-Za-z]{1}"
+        />
+      </div>
+
+      <div class="form-control">
+        <label for="color">Color preferit</label>
+        <input type="color" id="color" name="color" value="#000000" />
+      </div>
+
+      <div class="form-control">
+        <label for="mail">Correu electrònic</label>
+        <input
+          type="email"
+          id="mail"
+          name="mail"
+          placeholder="Escriu el teu correu electrònic"
+          required
+        />
+      </div>
+
+      <div class="form-control">
+        <label for="estudis">Estudis</label>
+        <select id="estudis" name="estudis" required>
+          <option value="primaria">Primària</option>
+          <option value="secundaria">Secundària</option>
+          <option value="universitat">Universitat</option>
+          <option value="altres">Altres</option>
+        </select>
+      </div>
+
+      <div class="form-control">
+        <label>Sexe</label>
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="sexe" value="home" required />
+            Home</label
+          >
+          <label
+            ><input type="radio" name="sexe" value="dona" required />
+            Dona</label
+          >
+          <label
+            ><input type="radio" name="sexe" value="altre" required />
+            Altre</label
+          >
+        </div>
+      </div>
+
+      <div class="form-control">
+        <label for="explicacio">Explicació</label>
+        <textarea
+          id="explicacio"
+          name="explicacio"
+          placeholder="Explica'ns més sobre tu"
+        ></textarea>
+      </div>
+
+      <div class="form-control">
+        <label for="foto">Fotografia</label>
+        <input type="file" id="foto" name="foto" accept="image/*" required />
+      </div>
+
+      <div class="form-control checkbox-group">
+        <input type="checkbox" id="privacitat" name="privacitat" required />
+        <label for="privacitat">Accepto la política de privacitat</label>
+      </div>
+
+      <button class="submit-btn" type="submit">Enviar</button>
+    </form>
+  </body>
+  <a href="/Projecto_HTMl_SergiG/Index/index.html" class="back-btn"
+    >Torna a l'índex</a
+  >
+</html>
